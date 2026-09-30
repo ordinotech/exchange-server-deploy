@@ -1,6 +1,6 @@
-# TP Exchange : déploiement et administration d'un serveur Exchange 2019
+# Exchange : déploiement et administration d'un serveur Exchange 2019
 
-Travail pratique réalisé dans le cadre du cours Exchange, Cégep de Saint-Hyacinthe. Le but était de monter un environnement Exchange complet et fonctionnel, de l'installation des prérequis jusqu'à la surveillance des services en production, en passant par la préparation d'Active Directory, la création de bases de données, de boîtes aux lettres, de groupes de distribution et de salles de réunion.
+Le but est de monter un environnement Exchange complet et fonctionnel, de l'installation des prérequis jusqu'à la surveillance des services en production, en passant par la préparation d'Active Directory, la création de bases de données, de boîtes aux lettres, de groupes de distribution et de salles de réunion.
 
 Le scénario impose une entreprise fictive avec un domaine local et un serveur `EXCHANGE01` joint à ce domaine. Chaque étape ci-dessous reprend les commandes PowerShell utilisées, une explication de ce qu'elles font et de leurs paramètres, et une capture d'écran du résultat obtenu.
 
@@ -30,7 +30,6 @@ On renomme le serveur pour ne pas garder le nom générique WIN-*****
 On télécharge les logiciels et programmes requis
 
 <aside>
-⚙
 
 ![1- Configuration des Prérequis](images/02-1-configuration-des-prerequis-2.png)
 
@@ -335,7 +334,7 @@ Set-CalendarProcessing -Identity "Salle_Formation_GL" -AutomateProcessing AutoAc
 <aside>
 ⚙
 
-troubleshooting
+Troubleshooting
 
 **Configurer Outlook en mode natif Exchange** 
 En environnement d'entreprise, on ne configure jamais un compte Exchange interne en IMAP (qui désactive les calendriers partagés, les contacts synchronisés et les fonctions avancées).
